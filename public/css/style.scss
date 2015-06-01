@@ -18,7 +18,7 @@ $font-body: 'Merriweather', serif;
 /* COLOR SCHEME */
 $light-brown: #766151;
 $brown: #48372F;
-$grey: #514947;
+$gray: #514947;
 $yellow: #FEE202;
 $white: #FEFEFE;
 
@@ -30,6 +30,11 @@ body {
 h3 {
   font-size: ms(1);
 }
+h2, h3 {
+  @extend .mb;
+  @extend .mt;
+  line-height: double($inuit-base-spacing-unit);
+}
 
 h2 {
   font-size: ms(2);
@@ -37,6 +42,12 @@ h2 {
 
 h1 {
   font-size: ms(3);
+  line-height: quadruple($inuit-base-spacing-unit);
+}
+
+h1 {
+  @extend .mb\+;
+  @extend .mt\+;
 }
 
 h1, h2 {
@@ -57,15 +68,32 @@ html {
 
 a {
   color: #00B7FF;
+  text-decoration: none;
 }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 .container {
-  padding: 0.5em;
+  padding: 21px;
   width: 100%;
   height: 100%;
+}
+
+nav {
+  position: fixed;
+  background-color: $white;
+  font-size: 1.4em;
+  line-height: $inuit-base-spacing-unit;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 21px 0;
+
+  a {
+    color: $gray;
+  }
+
+  li {
+    padding-left: ms(0);
+  }
 }
