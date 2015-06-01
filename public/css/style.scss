@@ -1,4 +1,19 @@
 @import "inuit-css";
+@import "../components/modular-scale/stylesheets/_modular-scale.scss";
+
+/* EXTRAS */
+.text--center {
+    text-align: center !important;
+}
+
+
+/* TYPOGRAPHY */
+$ms-base: 1em;
+$ms-ratio: $golden;
+
+$font-heading: 'Pacifico', cursive;
+$font-body: 'Merriweather', serif;
+
 
 /* COLOR SCHEME */
 $light-brown: #766151;
@@ -7,17 +22,50 @@ $grey: #514947;
 $yellow: #FEE202;
 $white: #FEFEFE;
 
+body {
+  font-size: ms(0);
+  font-family: $font-body
+}
+
+h3 {
+  font-size: ms(1);
+}
+
+h2 {
+  font-size: ms(2);
+}
+
+h1 {
+  font-size: ms(3);
+}
+
+h1, h2 {
+  font-family: $font-heading;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+h2.tagline {
+  font-family: $font-body;
+  font-style: italic;
+}
 
 html {
   width: 100%;
   height: 100%;
 }
-body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
 
 a {
   color: #00B7FF;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding: 0.5em;
+  width: 100%;
+  height: 100%;
+}
