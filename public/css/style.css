@@ -2079,7 +2079,8 @@ html {
 /* COLOR SCHEME */
 body {
   font-size: 1em;
-  font-family: "Merriweather", serif; }
+  font-family: "Merriweather", serif;
+  height: 100%; }
 
 h3 {
   font-size: 1.61803em; }
@@ -2129,5 +2130,29 @@ nav {
   padding: 21px 0; }
   nav a {
     color: #514947; }
+  nav li:first-child {
+    padding-left: 0; }
   nav li {
     padding-left: 1em; }
+
+.front {
+  background-color: #766151; }
+  .front img {
+    width: 100%;
+    max-height: 210px; }
+  .front h1 {
+    color: #FEFEFE; }
+  .front h2 {
+    color: #D69B01; }
+  .front h3 {
+    color: #48372F;
+    font-style: italic;
+    font-weight: 300; }
+
+@media screen and (min-width: 45em) {
+  .front {
+    height: 100%; }
+    .front img {
+      max-height: 420px; }
+    .front h1 {
+      font-size: 6.8541em; } }
