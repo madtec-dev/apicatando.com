@@ -21,6 +21,7 @@ $inuit-enable-layout--middle: true;
 $inuit-enable-layout--center: true;
 $inuit-enable-layout--huge: true;
 $inuit-layout-gutter: 12px;
+$inuit-enable-media--responsive: true;
 @import '../components/inuit-layout/_objects.layout';
 @import '../components/inuit-media/_objects.media';
 @import '../components/inuit-list-bare/_objects.list-bare';

@@ -498,6 +498,28 @@ html {
   .media__body > :last-child {
     margin-bottom: 0; }
 
+/**
+ * Responsive media objects.
+ *
+ * There is a very pragmatic, simple implementation of a responsive media
+ * object, which simply places the text-content beneath the image-content.
+ *
+ * We use a `max-width` media query because:
+ *
+ * a) it is the least verbose method in terms of amount of code required.
+ * b) the media object’s default state is image-next-to-text, so its stacked
+ *    state is the exception, rather than the rule.
+ */
+@media screen and (max-width: 720px) {
+  .media--responsive {
+    /**
+     * Rework the spacings on regular media objects.
+     */ }
+    .media--responsive > .media__img {
+      float: none;
+      margin-right: 0;
+      margin-bottom: 21px;
+      margin-left: 0; } }
 /*------------------------------------*\
     #LIST-BARE
 \*------------------------------------*/
@@ -2082,6 +2104,12 @@ body {
   font-family: "Merriweather", serif;
   height: 100%; }
 
+.layout {
+  font-size: 0; }
+
+.layout__item {
+  font-size: 1rem; }
+
 h3 {
   font-size: 1.61803em; }
 
@@ -2149,7 +2177,14 @@ nav {
     font-style: italic;
     font-weight: 300; }
 
+.media__img {
+  width: 15em; }
+
+/*** MEDIA QUERIES ***/
 @media screen and (min-width: 45em) {
+  .media__body {
+    text-align: left; }
+
   .front {
     height: 100%; }
     .front img {

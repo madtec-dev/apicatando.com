@@ -29,6 +29,13 @@ body {
   height: 100%;
 }
 
+.layout {
+  font-size: 0;
+}
+.layout__item {
+  font-size: 1rem;
+}
+
 h3 {
   font-size: ms(1);
 }
@@ -124,7 +131,18 @@ nav {
     font-weight: 300;
   }
 }
+
+
+.media__img {
+  width: 15em;
+}
+
+/*** MEDIA QUERIES ***/
 @media screen and (min-width: 45em) {
+  .media__body {
+    text-align: left;
+  }
+
   .front {
     height: 100%;
     img {
