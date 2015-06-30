@@ -26,6 +26,7 @@ $gray: #514947;
 $yellow: #FEE202;
 $orange: #D69B01;
 $white: #FEFEFE;
+$dark-gray: #333333;
 $black: #1E1E1E;
 
 body {
@@ -144,7 +145,8 @@ img {
 }
 
 #como-trabajamos {
-  background-color: $black;
+  background-color: $dark-gray;
+  background-image: url("/img/noise-light.png");
   color: $white;
 
   h3 {
