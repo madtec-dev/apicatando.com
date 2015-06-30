@@ -1091,7 +1091,7 @@ html {
 .p\+\+ {
   padding: 84px !important; }
 
-.pt\+\+ {
+.pt\+\+, h2 {
   padding-top: 84px !important; }
 
 .pr\+\+ {
@@ -2097,6 +2097,9 @@ html {
 .text--center {
   text-align: center !important; }
 
+.text--left {
+  text-align: left; }
+
 /* TYPOGRAPHY */
 /* COLOR SCHEME */
 body {
@@ -2141,14 +2144,14 @@ a {
   text-decoration: none; }
 
 .container {
-  padding: 21px;
+  padding: 1.5em 0;
   width: 100%;
   height: 100%; }
 
 nav {
   position: fixed;
   background-color: #FEFEFE;
-  font-size: 1.4em;
+  font-size: 1em;
   line-height: 21px;
   top: 0;
   left: 0;
@@ -2177,12 +2180,23 @@ nav {
     font-style: italic;
     font-weight: 300; }
 
-.media__img {
-  width: 15em; }
+img {
+  max-width: 100%; }
+
+#como-trabajamos {
+  background-color: #1E1E1E;
+  color: #FEFEFE; }
+  #como-trabajamos h3 {
+    color: #D69B01;
+    font-weight: 300;
+    text-transform: uppercase; }
 
 /*** MEDIA QUERIES ***/
 @media screen and (min-width: 45em) {
-  .media__body {
+  html {
+    font-size: 110%; }
+
+  .text--left-lap-and-up {
     text-align: left; }
 
   .front {

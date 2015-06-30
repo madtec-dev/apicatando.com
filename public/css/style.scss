@@ -6,6 +6,10 @@
     text-align: center !important;
 }
 
+.text--left {
+  text-align: left;
+}
+
 
 /* TYPOGRAPHY */
 $ms-base: 1em;
@@ -22,6 +26,7 @@ $gray: #514947;
 $yellow: #FEE202;
 $orange: #D69B01;
 $white: #FEFEFE;
+$black: #1E1E1E;
 
 body {
   font-size: ms(0);
@@ -47,6 +52,7 @@ h2, h3 {
 
 h2 {
   font-size: ms(2);
+  @extend .pt\+\+;
 }
 
 h1 {
@@ -81,7 +87,7 @@ a {
 }
 
 .container {
-  padding: 21px;
+  padding: 1.5em 0;
   width: 100%;
   height: 100%;
 }
@@ -89,7 +95,7 @@ a {
 nav {
   position: fixed;
   background-color: $white;
-  font-size: 1.4em;
+  font-size: 1em;
   line-height: $inuit-base-spacing-unit;
   top: 0;
   left: 0;
@@ -133,16 +139,31 @@ nav {
 }
 
 
-.media__img {
-  width: 15em;
+img {
+  max-width: 100%;
+}
+
+#como-trabajamos {
+  background-color: $black;
+  color: $white;
+
+  h3 {
+    color: $orange;
+    //font-family: $font-heading;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
 }
 
 /*** MEDIA QUERIES ***/
 @media screen and (min-width: 45em) {
-  .media__body {
-    text-align: left;
+  html {
+    font-size: 110%;
   }
 
+  .text--left-lap-and-up {
+    text-align: left;
+  }
   .front {
     height: 100%;
     img {
