@@ -123,7 +123,7 @@ nav {
   background-color: $light-brown;
   img {
     width: 100%;
-    max-height: 210px;
+    max-height: 280px;
   }
 
   h1 {
@@ -133,7 +133,7 @@ nav {
     color: $orange;
   }
   h3 {
-    color: $brown;
+    color: $yellow;
     font-style: italic;
     font-weight: 300;
   }
@@ -169,10 +169,28 @@ img {
   .front {
     height: 100%;
     img {
-      max-height: 420px;
+      max-height: 70%;
     }
     h1 {
       font-size: ms(4);
     }
   }
+}
+.bg--full {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 0;
+  
+}
+.front {
+  background: url(/img/front-bg.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+
 }
