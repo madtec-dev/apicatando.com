@@ -10,6 +10,9 @@
   text-align: left;
 }
 
+.inline {
+  display: inline-block;
+}
 
 /* TYPOGRAPHY */
 $ms-base: 1em;
@@ -23,6 +26,7 @@ $font-body: 'Merriweather', serif;
 $light-brown: #766151;
 $brown: #48372F;
 $gray: #514947;
+$light-gray: #CCCCCC;
 $yellow: #FEE202;
 $orange: #D69B01;
 $white: #FEFEFE;
@@ -186,6 +190,9 @@ img {
 #productos {
   p {
     font-weight: 300;
+  }
+  i {
+    color: $light-gray;
   }
 }
 .product__title {

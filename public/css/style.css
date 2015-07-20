@@ -2336,6 +2336,9 @@ html {
 .text--left {
   text-align: left; }
 
+.inline {
+  display: inline-block; }
+
 /* TYPOGRAPHY */
 /* COLOR SCHEME */
 body {
@@ -2454,6 +2457,8 @@ img {
 
 #productos p {
   font-weight: 300; }
+#productos i {
+  color: #CCCCCC; }
 
 .product__title {
   font-weight: 400;
