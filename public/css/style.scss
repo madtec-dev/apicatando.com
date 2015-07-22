@@ -266,11 +266,14 @@ img {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  h3 {
+    font-weight: 300;
+  }
 }
 .contact__email {
   font-size: ms(1);
   a {
-    color: $light-gray;
+    color: $orange;
     &:hover, &:focus {
       color: #00b7ff;
     }

@@ -2518,11 +2518,13 @@ img {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover; }
+  #contacto h3 {
+    font-weight: 300; }
 
 .contact__email {
   font-size: 1.61803em; }
   .contact__email a {
-    color: #CCCCCC; }
+    color: #D69B01; }
     .contact__email a:hover, .contact__email a:focus {
       color: #00b7ff; }
 
