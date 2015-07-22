@@ -2339,6 +2339,15 @@ html {
 .inline {
   display: inline-block; }
 
+.vertical--middle {
+  display: table;
+  height: 100%;
+  width: 100%; }
+
+.vertical--middle > * {
+  display: table-cell;
+  vertical-align: middle; }
+
 /* TYPOGRAPHY */
 /* COLOR SCHEME */
 .bg--light-gray {
@@ -2371,8 +2380,9 @@ h1 {
 
 h1, h2 {
   font-family: "Pacifico", cursive;
-  font-weight: 400;
-  text-transform: capitalize; }
+  font-weight: 400; }
+  h1:first-letter, h2:first-letter {
+    text-transform: uppercase; }
 
 h2.tagline {
   font-family: "Pacifico", cursive;
@@ -2380,8 +2390,7 @@ h2.tagline {
   letter-spacing: 2px;
   font-style: italic;
   color: #CCCCCC;
-  padding: 1em !important;
-  margin: 0 !important; }
+  padding: 1em !important; }
 
 html {
   width: 100%;
@@ -2430,11 +2439,11 @@ nav {
 img {
   max-width: 100%; }
 
-#como-trabajamos {
+#como-trabajamos, #quienes-somos {
   background-color: #333333;
   background-image: url("/img/noise-light.png");
   color: #FEFEFE; }
-  #como-trabajamos h3 {
+  #como-trabajamos h3, #quienes-somos h3 {
     color: #D69B01;
     font-weight: 400;
     text-transform: uppercase; }
@@ -2458,10 +2467,24 @@ img {
 /***** PRODUCTOS *******/
 .btn {
   padding: 14px;
-  background-color: #48372F;
   border: 0 none;
   border-radius: 4px;
-  cursor: default; }
+  transition: 0.5s ease; }
+
+.btn--default {
+  background-color: #48372F; }
+  .btn--default:hover {
+    background-color: #5cb85c; }
+    .btn--default:hover span {
+      display: none; }
+  .btn--default:hover:after {
+    content: 'Hacer pedido'; }
+
+.btn--orange {
+  background-color: #D69B01; }
+  .btn--orange:hover {
+    padding: 20px;
+    background-color: #5cb85c; }
 
 #productos {
   background-image: url("/img/honeycomb.jpg"); }
@@ -2477,6 +2500,31 @@ img {
 .product__type {
   font-style: italic;
   color: #D69B01; }
+
+/***** ABOUT *******/
+#quienes-somos {
+  min-height: 100%; }
+
+.img--rounded {
+  border-radius: 50%;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5); }
+
+/****** CONTACT ******/
+#contacto {
+  color: #FEFEFE;
+  height: 100%;
+  background: url(/img/contact.jpg) no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+
+.contact__email {
+  font-size: 1.61803em; }
+  .contact__email a {
+    color: #CCCCCC; }
+    .contact__email a:hover, .contact__email a:focus {
+      color: #00b7ff; }
 
 /*** MEDIA QUERIES ***/
 @media screen and (min-width: 45em) {
