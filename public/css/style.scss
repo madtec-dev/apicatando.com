@@ -174,7 +174,7 @@ img {
 
 #como-trabajamos, #quienes-somos {
   background-color: $dark-gray;
-  background-image: url("/img/noise-light.png");
+  background-image: url("/img/honeycomb.png");
   color: $white;
 
   h3 {
@@ -196,7 +196,7 @@ img {
   
 }
 .front {
-  background: url(/img/front-bg.jpg) no-repeat center center;
+  background: url(/img/front-bg3.jpg) no-repeat top center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -231,7 +231,7 @@ img {
   background-color: $orange;
 }
 #productos {
-  background-image: url("/img/honeycomb.jpg");
+  background-image: url("/img/honeycomb.png");
   p {
     font-weight: 300;
   }

@@ -2441,7 +2441,7 @@ img {
 
 #como-trabajamos, #quienes-somos {
   background-color: #333333;
-  background-image: url("/img/noise-light.png");
+  background-image: url("/img/honeycomb.png");
   color: #FEFEFE; }
   #como-trabajamos h3, #quienes-somos h3 {
     color: #D69B01;
@@ -2458,7 +2458,7 @@ img {
   z-index: 0; }
 
 .front {
-  background: url(/img/front-bg.jpg) no-repeat center center;
+  background: url(/img/front-bg3.jpg) no-repeat top center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -2487,7 +2487,7 @@ img {
     background-color: #5cb85c; }
 
 #productos {
-  background-image: url("/img/honeycomb.jpg"); }
+  background-image: url("/img/honeycomb.png"); }
   #productos p {
     font-weight: 300; }
   #productos i {
