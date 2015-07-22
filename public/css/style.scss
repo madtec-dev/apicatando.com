@@ -33,6 +33,10 @@ $white: #FEFEFE;
 $dark-gray: #333333;
 $black: #1E1E1E;
 
+.bg--light-gray {
+  background-color: $light-gray;
+}
+
 body {
   font-size: ms(0);
   font-family: $font-body;
@@ -50,8 +54,8 @@ h3 {
   font-size: ms(1);
 }
 h2, h3 {
+  margin-top: 0;
   @extend .mb;
-  @extend .mt;
   line-height: double($inuit-base-spacing-unit);
 }
 
@@ -77,8 +81,15 @@ h1, h2 {
 }
 
 h2.tagline {
-  font-family: $font-body;
+  font-family: $font-heading;
+  background-color: rgba(0, 0, 0, 0.2);
+  letter-spacing: 2px;
   font-style: italic;
+  //font-weight: 300;
+  //text-transform: uppercase;
+  color: $light-gray;
+  padding: 1em !important;
+  margin: 0 !important;
 }
 
 html {
@@ -92,7 +103,7 @@ a {
 }
 
 .container {
-  padding: 1.5em 0;
+  //padding: 1.5em 0;
   width: 100%;
   height: 100%;
 }
@@ -133,8 +144,8 @@ nav {
   h1 {
     color: $white;
   }
-  h2 {
-    color: $orange;
+  h2 span {
+    color: $light-brown;
   }
   h3 {
     color: $yellow;
@@ -188,6 +199,7 @@ img {
   cursor: default;
 }
 #productos {
+  background-image: url("/img/honeycomb.jpg");
   p {
     font-weight: 300;
   }
