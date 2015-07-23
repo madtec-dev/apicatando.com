@@ -2410,15 +2410,6 @@ header {
   -o-user-select: none;
   user-select: none; }
 
-@media screen and (min-width: 40em) {
-  .js .nav-collapse {
-    position: relative; }
-
-  .js .nav-collapse.closed {
-    max-height: none; }
-
-  .nav-toggle {
-    display: none; } }
 .mask {
   -webkit-transition: opacity 300ms;
   -moz-transition: opacity 300ms;
@@ -2441,10 +2432,6 @@ header {
   visibility: visible;
   opacity: 1; }
 
-@media screen and (min-width: 40em) {
-  .mask {
-    display: none !important;
-    opacity: 0 !important; } }
 /* ------------------------------------------
   NAVIGATION STYLES
 --------------------------------------------- */
@@ -2466,17 +2453,10 @@ header {
   width: 100%;
   float: left; }
 
-@media screen and (min-width: 40em) {
-  .nav-collapse {
-    float: right;
-    width: auto; } }
 .nav-collapse li {
   float: left;
   width: 100%; }
 
-@media screen and (min-width: 40em) {
-  .nav-collapse li {
-    width: auto; } }
 .nav-collapse a {
   -webkit-tap-highlight-color: transparent;
   border-top: 1px solid white;
@@ -2491,21 +2471,10 @@ header {
   background: #b73214;
   color: #FEFEFE; }
 
-@media screen and (min-width: 40em) {
-  .nav-collapse a {
-    border-left: 1px solid white;
-    padding: 1.02em 2em;
-    text-align: center;
-    border-top: 0;
-    float: left;
-    margin: 0; } }
 .nav-collapse ul ul a {
   background: #ca3716;
   padding-left: 2em; }
 
-@media screen and (min-width: 40em) {
-  .nav-collapse ul ul a {
-    display: none; } }
 .nav-toggle {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2709,10 +2678,6 @@ img {
   html {
     font-size: 110%; }
 
-  .nav-collapse li {
-    display: inline-block !important;
-    width: auto !important; }
-
   .text--left-lap-and-up {
     text-align: left; }
 
@@ -2722,3 +2687,34 @@ img {
       max-height: 70%; }
     .front h1 {
       font-size: 6.8541em; } }
+@media screen and (min-width: 80em) {
+  .js .nav-collapse {
+    position: relative; }
+
+  .js .nav-collapse.closed {
+    max-height: none; }
+
+  .nav-toggle {
+    display: none; }
+
+  .mask {
+    display: none !important;
+    opacity: 0 !important; }
+
+  .nav-collapse {
+    float: right;
+    width: auto; }
+
+  .nav-collapse li {
+    width: auto; }
+
+  .nav-collapse a {
+    border-left: 1px solid white;
+    padding: 1.02em 2em;
+    text-align: center;
+    border-top: 0;
+    float: left;
+    margin: 0; }
+
+  .nav-collapse ul ul a {
+    display: none; } }
