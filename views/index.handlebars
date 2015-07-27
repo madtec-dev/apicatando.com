@@ -9,11 +9,11 @@
   <a href="#home" class="logo" data-scroll>Apicatando</a>
   <nav id="nav" class="text--center nav-collapse">
     <ul class="list-inline">
-        <li><a class="page-scroll" href="#productos" data-scroll>productos</a></li>
-        <li><a class="page-scroll" href="#como-trabajamos" data-scroll>como trabajamos</a></li>
-        <li><a class="page-scroll" href="#colmena" data-scroll>la colmena</a></li>
-        <li><a class="page-scroll" href="#quienes-somos" data-scroll>quienes somos</a></li>
-        <li><a class="page-scroll" href="#contacto" data-scroll>contacto</a></li>
+        <li><a href="#productos" data-scroll>productos</a></li>
+        <li><a href="#como-trabajamos" data-scroll>como trabajamos</a></li>
+        <li><a href="#colmena" data-scroll>la colmena</a></li>
+        <li><a href="#quienes-somos" data-scroll>quienes somos</a></li>
+        <li><a href="#contacto" data-scroll>contacto</a></li>
     </ul>
   </nav>
 </header>
@@ -22,7 +22,8 @@
 <div class="container text--center">
   <section id="productos" class="pb++">
     <h2 class="mb++">nuestros productos</h2>
-    <ul class="list-bare layout">
+    <div class="layout">
+    <ul class="list-bare">
       <li class="layout__item u-8/12-lap-and-up mb++">
         <div class="layout">
           <div class="layout__item u-6/12 u-5/12-lap u-3/12-desk lap-and-up-pr+">
@@ -33,7 +34,7 @@
             <h4 class="product__type">Variedad Multifloral</h4>
             <p>Color claro dorado, liquida, de cristalización facil por su alto contenido en nectar de romero. Dulce y sabrosa.
             </p>
-            <a class="page-scroll" href="#contacto">
+            <a href="#contacto" data-scroll>
               <button class="btn btn--default"><span>7 euros/kg</span></button>
             </a>
             <h4>Composición</h4>
@@ -61,7 +62,7 @@
             <h3 class="product__title">Miel tardia</h3>
             <h4 class="product__type">Variedad Multifloral</h4>
             <p>Color oscuro debido a los mielatos de los árboles como el roble, castaño y encina. Densa, aromática y de sabor intenso.</p>
-            <a class="page-scroll" href="#contacto">
+            <a href="#contacto" data-scroll>
               <button class="btn btn--default"><span>7 euros/kg</span></button>
             </a>
             <h4>Composición</h4>
@@ -89,7 +90,7 @@
             <h3 class="product__title">Propóleo</h3>
             <p>El propóleo es una sustancia con propiedades medicinales que las abejas producen en pequeñas cantidades.</p>
             <!--<p>La obtienen recolectando sustancias resinosas de determinadas plantas y árboles que posteriormente procesan con enzimas de su saliva.</p>-->
-            <a class="page-scroll" href="#contacto">
+            <a href="#contacto" data-scroll>
               <button class="btn btn--default"><span>12 euros/30mml</span></button>
             </a>
             <h4>Composición</h4>
@@ -103,11 +104,14 @@
         </div>
       </li>
     </ul>
+    </div>
   </section>
 
   <section id="como-trabajamos" class="pb++">
     <h2 class="mb++">como trabajamos</h2>
-    <ul class="list-bare layout">
+    <div class="layout">
+      
+    <ul class="list-bare">
       <li class="layout__item u-6/12-lap-and-up mb++">
         <div class="layout">
           <div class="layout__item u-9/12 u-4/12-lap-and-up">
@@ -165,6 +169,7 @@
         </div>
       </li>
     </ul>
+    </div>
   </section>
 
   <section id="colmena" class="mb++">
