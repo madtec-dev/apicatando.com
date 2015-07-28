@@ -2470,7 +2470,7 @@ header {
 
 .nav-collapse a:active,
 .nav-collapse .active a {
-  background: #b73214;
+  background: #d69b01;
   color: #FEFEFE; }
 
 .nav-collapse ul ul a {
@@ -2564,10 +2564,8 @@ header {
   font-weight: 300; }
   header a {
     color: #514947; }
-  header li:first-child {
-    padding-left: 0; }
   header li {
-    padding-left: 1em; }
+    padding-left: 0; }
 
 .front {
   background-color: #766151; }

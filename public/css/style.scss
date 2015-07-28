@@ -188,7 +188,7 @@ header {
 
 .nav-collapse a:active,
 .nav-collapse .active a {
-  background: #b73214;
+  background: #d69b01;
   color: $white;
 }
 
@@ -306,13 +306,8 @@ header {
   a {
     color: $gray;
   }
-
-  li:first-child {
-    padding-left: 0;
-  
-  }
   li {
-    padding-left: ms(0);
+    padding-left: 0;
   }
 }
 .front {
