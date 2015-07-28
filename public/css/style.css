@@ -2365,6 +2365,8 @@ header {
   width: 100%;
   left: 0;
   top: 0; }
+  header span img {
+    width: 10%; }
 
 /******* NAV *******/
 .logo {
@@ -2584,6 +2586,9 @@ header {
 img {
   max-width: 100%; }
 
+#como-trabajamos img {
+  width: 70%; }
+
 #como-trabajamos, #quienes-somos {
   background-color: #333333;
   background-image: url("/img/honeycomb.png");
@@ -2603,6 +2608,7 @@ img {
   z-index: 0; }
 
 .front {
+  height: 100%;
   background: url(/img/front-bg3.jpg) no-repeat top center;
   -webkit-background-size: cover;
   -moz-background-size: cover;

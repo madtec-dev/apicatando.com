@@ -62,6 +62,9 @@ header {
   width: 100%;
   left: 0;
   top: 0;
+  span img {
+    width: 10%;
+  }
 }
 /******* NAV *******/
 .logo {
@@ -338,6 +341,10 @@ img {
   max-width: 100%;
 }
 
+#como-trabajamos img {
+  width: 70%;
+}
+
 #como-trabajamos, #quienes-somos {
   background-color: $dark-gray;
   background-image: url("/img/honeycomb.png");
@@ -362,6 +369,7 @@ img {
   
 }
 .front {
+  height: 100%;
   background: url(/img/front-bg3.jpg) no-repeat top center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
