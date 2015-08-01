@@ -378,6 +378,7 @@ img {
 /***** PRODUCTOS *******/
 .btn {
   padding: 14px;
+  line-height: 1;
   border: 0 none;
   border-radius: 4px;
   transition: 0.5s ease;
@@ -395,6 +396,24 @@ img {
     content: 'Hacer pedido';
   } 
 }
+.btn--info {
+  background-color: $gray;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  &:hover {
+    width: auto;
+    height: auto;
+    background-color: $green;
+    span {
+      display: none;
+    }
+  }
+  &:hover:after {
+    content: attr(title);
+  } 
+}
+
 .btn--orange {
   &:hover {
       padding: 20px;
@@ -465,7 +484,6 @@ img {
 .info {
   width: 2em;
   height: 2em;
-  background-color: $gray;
   color: $white;
   border-radius: 50%;
   position: absolute;
