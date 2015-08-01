@@ -2655,7 +2655,7 @@ img {
   position: relative;
   height: 100%; }
   #colmena img {
-    height: 70%; }
+    height: 50%; }
 
 .colmena__info {
   height: 100%;
@@ -2695,11 +2695,16 @@ img {
   color: #FEFEFE;
   border-radius: 50%;
   position: absolute;
-  top: 20%;
   left: 30%; }
 
+.info[data-info='1'] {
+  top: 10%; }
+
 .info[data-info='2'] {
-  top: 50%; }
+  top: 20%; }
+
+.info[data-info='3'] {
+  top: 30%; }
 
 /***** ABOUT *******/
 #quienes-somos {
@@ -2743,8 +2748,20 @@ img {
     .front h1 {
       font-size: 6.8541em; }
 
+  #colmena img {
+    height: 70%; }
+
   .overlay div {
-    width: 50%; } }
+    width: 50%; }
+
+  .info[data-info='1'] {
+    top: 15%; }
+
+  .info[data-info='2'] {
+    top: 30%; }
+
+  .info[data-info='3'] {
+    top: 45%; } }
 @media screen and (min-width: 80em) {
   .js .nav-collapse {
     position: relative; }
