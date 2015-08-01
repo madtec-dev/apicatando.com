@@ -2635,11 +2635,11 @@ img {
     padding: 20px;
     background-color: #5cb85c; }
 
-#productos {
+#productos, #colmena {
   background-image: url("/img/honeycomb.png"); }
-  #productos p {
+  #productos p, #colmena p {
     font-weight: 300; }
-  #productos i {
+  #productos i, #colmena i {
     color: #CCCCCC; }
 
 .product__title {
@@ -2649,6 +2649,50 @@ img {
 .product__type {
   font-style: italic;
   color: #D69B01; }
+
+/***** COLMENA *******/
+#colmena {
+  position: relative;
+  height: 100%; }
+  #colmena img {
+    height: 70%; }
+
+.colmena__info {
+  height: 100%;
+  position: relative;
+  width: auto; }
+
+.overlay {
+  visibility: hidden;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.overlay div {
+  width: 300px;
+  margin: 20% auto;
+  background-color: #FEFEFE;
+  border: 1px solid #000;
+  padding: 15px;
+  text-align: center; }
+
+.info {
+  width: 2em;
+  height: 2em;
+  background-color: #514947;
+  color: #FEFEFE;
+  border-radius: 50%;
+  position: absolute;
+  top: 20%;
+  left: 30%; }
+
+[data-info|='2'] {
+  left: 50%; }
 
 /***** ABOUT *******/
 #quienes-somos {
