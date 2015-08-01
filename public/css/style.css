@@ -2674,12 +2674,19 @@ img {
   background-color: rgba(0, 0, 0, 0.5); }
 
 .overlay div {
-  width: 300px;
+  position: relative;
   margin: 20% auto;
   background-color: #FEFEFE;
-  border: 1px solid #000;
-  padding: 15px;
+  width: 80%;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  padding: 1em;
   text-align: center; }
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 7px; }
 
 .info {
   width: 2em;
@@ -2691,8 +2698,8 @@ img {
   top: 20%;
   left: 30%; }
 
-[data-info|='2'] {
-  left: 50%; }
+.info[data-info='2'] {
+  top: 50%; }
 
 /***** ABOUT *******/
 #quienes-somos {
@@ -2734,7 +2741,10 @@ img {
     .front img {
       max-height: 70%; }
     .front h1 {
-      font-size: 6.8541em; } }
+      font-size: 6.8541em; }
+
+  .overlay div {
+    width: 50%; } }
 @media screen and (min-width: 80em) {
   .js .nav-collapse {
     position: relative; }
