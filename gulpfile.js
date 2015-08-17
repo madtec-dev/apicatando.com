@@ -6,6 +6,8 @@ var gulp = require('gulp'),
   jshint = require('gulp-jshint'),
   livereload = require('gulp-livereload'),
   sass = require('gulp-ruby-sass'),
+  minifyHTML = require('gulp-minify-html'),
+  uncss = require('gulp-uncss'),
   minifyCss = require('gulp-minify-css');
 
 gulp.task('sass', function () {
@@ -28,6 +30,41 @@ gulp.task('develop', function () {
       livereload.changed(__dirname);
     }, 500);
   });
+});
+
+gulp.task('uncss', function() {
+    return gulp.src('./public/css/style.css')
+        // remove unused css classes
+        .pipe(uncss({
+            html: ['./views/index.html'],
+            ignore: ['.js .nav-collapse', '.nav-collapse.opened', '.nav-toggle', '.android .mask', '.mask', '.js-nav-active .mask', '.fixed', '.nav-toggle:before', '.nav-toggle.active:before', '.disable-pointer-events']
+        }))
+        // minify and concat resulted css
+        .pipe(gulp.dest('./public/dst'));
+
+});
+
+gulp.task('css', function () {
+    return gulp.src('./public/css/style.css')
+        // remove unused css classes
+        .pipe(uncss({
+            html: ['./views/index.html'],
+            ignore: ['.js .nav-collapse', '.nav-collapse.opened', '.nav-toggle', '.android .mask', '.mask', '.js-nav-active .mask', '.fixed', '.nav-toggle:before', '.nav-toggle.active:before', '.disable-pointer-events', '.nav-collapse .active a']
+        }))
+        // minify and concat resulted css
+        .pipe(minifyCss({compatibility: 'ie8'}))
+        .pipe(concat('style.min.css'))
+        .pipe(gulp.dest('./public/dst'));
+});
+
+gulp.task('minify-html', function() {
+  var opts = {
+    conditionals: true,
+    spare:true
+  };
+  return gulp.src('./views/**/*.handlebars')
+    .pipe(minifyHTML(opts))
+    .pipe(gulp.dest('./views/dst'));
 });
 
 gulp.task('minify-css', function() {
@@ -53,6 +90,7 @@ gulp.task('default', [
 ]);
 
 gulp.task('production', [
-  'minify-css',
+  'css',
+  'minify-html',
   'js'
 ]);

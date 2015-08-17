@@ -2355,7 +2355,7 @@ html {
 
 body {
   font-size: 1em;
-  font-family: "Merriweather", serif;
+  font-family: "Roboto Slab", serif;
   height: 100%; }
 
 header {
@@ -2371,12 +2371,18 @@ header {
 /******* NAV *******/
 .logo {
   -webkit-tap-highlight-color: transparent;
+  font-family: "Pacifico", cursive;
   text-decoration: none;
-  font-weight: bold;
-  line-height: 55px;
   padding: 0 20px;
   color: #514947;
   float: left; }
+  .logo h1 {
+    font-size: 1.61803em;
+    font-weight: 400;
+    margin: 0 !important;
+    line-height: 50px;
+    text-transform: lowercase !important;
+    display: inline-block; }
 
 .nav-collapse ul {
   margin: 0;
@@ -2461,17 +2467,19 @@ header {
 
 .nav-collapse a {
   -webkit-tap-highlight-color: transparent;
-  border-top: 1px solid white;
   text-decoration: none;
   padding: 0.7em 1em;
   color: #514947;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 300;
   width: 100%;
   float: left; }
 
 .nav-collapse a:active,
 .nav-collapse .active a {
-  background: #d69b01;
-  color: #FEFEFE; }
+  color: #d69b01;
+  font-weight: 400; }
 
 .nav-collapse ul ul a {
   background: #ca3716;
@@ -2529,10 +2537,10 @@ h1 {
   font-size: 4.23607em;
   line-height: 84px; }
 
-h1, h2 {
+h2 {
   font-family: "Pacifico", cursive;
   font-weight: 400; }
-  h1:first-letter, h2:first-letter {
+  h2:first-letter {
     text-transform: uppercase; }
 
 h2.tagline {
@@ -2559,9 +2567,7 @@ header {
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
   background-color: #FEFEFE;
   font-size: 1em;
-  line-height: 21px;
-  text-transform: uppercase;
-  font-weight: 300; }
+  line-height: 21px; }
   header a {
     color: #514947; }
   header li {
@@ -2617,6 +2623,10 @@ img {
 .composition-icon {
   width: 1em; }
 
+.product__price span b {
+  font-size: 2.61803em;
+  color: #FEFEFE; }
+
 .btn {
   padding: 14px;
   line-height: 1;
@@ -2631,6 +2641,7 @@ img {
     .btn--default:hover span {
       display: none; }
   .btn--default:hover:after {
+    font-size: 1.61803em;
     content: 'Hacer pedido'; }
 
 .btn--info {
@@ -2801,7 +2812,6 @@ img {
     width: auto; }
 
   .nav-collapse a {
-    border-left: 1px solid white;
     padding: 1.02em 2em;
     text-align: center;
     border-top: 0;

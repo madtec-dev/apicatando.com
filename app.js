@@ -19,7 +19,12 @@ app.engine('handlebars', exphbs({
   defaultLayout: 'main',
   partialsDir: ['views/partials/']
 }));
-app.set('views', path.join(__dirname, 'views'));
+if (app.get('env') === 'development') {
+  app.set('views', path.join(__dirname, 'views'));
+} 
+else {
+  app.set('views', path.join(__dirname, 'views/dst'));
+}
 app.set('view engine', 'handlebars');
 
 var env = process.env.NODE_ENV || 'development';

@@ -30,7 +30,7 @@ $ms-base: 1em;
 $ms-ratio: $golden;
 
 $font-heading: 'Pacifico', cursive;
-$font-body: 'Merriweather', serif;
+$font-body: 'Roboto Slab', serif;
 
 
 /* COLOR SCHEME */
@@ -68,10 +68,17 @@ header {
 }
 /******* NAV *******/
 .logo {
+  h1 {
+    font-size: ms(1);
+    font-weight: 400;
+    margin: 0 !important;
+    line-height: 50px;
+    text-transform: lowercase !important;
+    display: inline-block;
+  }
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+  font-family: $font-heading;
   text-decoration: none;
-  font-weight: bold;
-  line-height: 55px;
   padding: 0 20px;
   color: $gray;
   float: left;
@@ -177,19 +184,22 @@ header {
 
 .nav-collapse a {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
-  border-top: 1px solid white;
   text-decoration: none;
   //background: #f4421a;
   padding: 0.7em 1em;
   color: $gray;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 300;
   width: 100%;
   float: left;
 }
 
 .nav-collapse a:active,
 .nav-collapse .active a {
-  background: #d69b01;
-  color: $white;
+  color: #d69b01;
+  font-weight: 400;
+  //color: $white;
 }
 
 
@@ -263,7 +273,7 @@ h1 {
   @extend .mt\+;
 }
 
-h1, h2 {
+h2 {
   font-family: $font-heading;
   font-weight: 400;
   &:first-letter {
@@ -303,8 +313,6 @@ header {
   background-color: $white;
   font-size: 1em;
   line-height: $inuit-base-spacing-unit;
-  text-transform: uppercase;
-  font-weight: 300;
 
   a {
     color: $gray;
@@ -379,6 +387,12 @@ img {
 .composition-icon {
   width: 1em;
 }
+.product__price {
+  span b{
+    font-size: ms(2);
+    color: $white;
+  }
+}
 .btn {
   padding: 14px;
   line-height: 1;
@@ -396,6 +410,7 @@ img {
     }
   }
   &:hover:after {
+    font-size: ms(1);
     content: 'Hacer pedido';
   } 
 }
@@ -596,7 +611,6 @@ img {
     width: auto;
   }
  .nav-collapse a {
-    border-left: 1px solid white;
     padding: 1.02em 2em;
     text-align: center;
     border-top: 0;
