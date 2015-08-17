@@ -824,7 +824,7 @@ html {
 
   .u-11\/12-portable {
     width: 91.66667% !important; } }
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 64em) and (max-width: 79.9375) {
   .u-1\/12-desk {
     width: 8.33333% !important; }
 
@@ -856,6 +856,39 @@ html {
     width: 83.33333% !important; }
 
   .u-11\/12-desk {
+    width: 91.66667% !important; } }
+@media screen and (min-width: 80em) {
+  .u-1\/12-hd {
+    width: 8.33333% !important; }
+
+  .u-2\/12-hd {
+    width: 16.66667% !important; }
+
+  .u-3\/12-hd {
+    width: 25% !important; }
+
+  .u-4\/12-hd {
+    width: 33.33333% !important; }
+
+  .u-5\/12-hd {
+    width: 41.66667% !important; }
+
+  .u-6\/12-hd {
+    width: 50% !important; }
+
+  .u-7\/12-hd {
+    width: 58.33333% !important; }
+
+  .u-8\/12-hd {
+    width: 66.66667% !important; }
+
+  .u-9\/12-hd {
+    width: 75% !important; }
+
+  .u-10\/12-hd {
+    width: 83.33333% !important; }
+
+  .u-11\/12-hd {
     width: 91.66667% !important; } }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .u-1\/12-retina {
@@ -1217,7 +1250,7 @@ html {
   .portable-pv {
     padding-top: 21px !important;
     padding-bottom: 21px !important; } }
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 64em) and (max-width: 79.9375) {
   .desk-p {
     padding: 21px !important; }
 
@@ -1238,6 +1271,29 @@ html {
     padding-left: 21px !important; }
 
   .desk-pv {
+    padding-top: 21px !important;
+    padding-bottom: 21px !important; } }
+@media screen and (min-width: 80em) {
+  .hd-p {
+    padding: 21px !important; }
+
+  .hd-pt {
+    padding-top: 21px !important; }
+
+  .hd-pr {
+    padding-right: 21px !important; }
+
+  .hd-pb {
+    padding-bottom: 21px !important; }
+
+  .hd-pl {
+    padding-left: 21px !important; }
+
+  .hd-ph {
+    padding-right: 21px !important;
+    padding-left: 21px !important; }
+
+  .hd-pv {
     padding-top: 21px !important;
     padding-bottom: 21px !important; } }
 /**
@@ -1335,7 +1391,7 @@ html {
   .portable-pv-- {
     padding-top: 5px !important;
     padding-bottom: 5px !important; } }
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 64em) and (max-width: 79.9375) {
   .desk-p-- {
     padding: 5px !important; }
 
@@ -1356,6 +1412,29 @@ html {
     padding-left: 5px !important; }
 
   .desk-pv-- {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important; } }
+@media screen and (min-width: 80em) {
+  .hd-p-- {
+    padding: 5px !important; }
+
+  .hd-pt-- {
+    padding-top: 5px !important; }
+
+  .hd-pr-- {
+    padding-right: 5px !important; }
+
+  .hd-pb-- {
+    padding-bottom: 5px !important; }
+
+  .hd-pl-- {
+    padding-left: 5px !important; }
+
+  .hd-ph-- {
+    padding-right: 5px !important;
+    padding-left: 5px !important; }
+
+  .hd-pv-- {
     padding-top: 5px !important;
     padding-bottom: 5px !important; } }
 /**
@@ -1453,7 +1532,7 @@ html {
   .portable-pv- {
     padding-top: 11px !important;
     padding-bottom: 11px !important; } }
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 64em) and (max-width: 79.9375) {
   .desk-p- {
     padding: 11px !important; }
 
@@ -1474,6 +1553,29 @@ html {
     padding-left: 11px !important; }
 
   .desk-pv- {
+    padding-top: 11px !important;
+    padding-bottom: 11px !important; } }
+@media screen and (min-width: 80em) {
+  .hd-p- {
+    padding: 11px !important; }
+
+  .hd-pt- {
+    padding-top: 11px !important; }
+
+  .hd-pr- {
+    padding-right: 11px !important; }
+
+  .hd-pb- {
+    padding-bottom: 11px !important; }
+
+  .hd-pl- {
+    padding-left: 11px !important; }
+
+  .hd-ph- {
+    padding-right: 11px !important;
+    padding-left: 11px !important; }
+
+  .hd-pv- {
     padding-top: 11px !important;
     padding-bottom: 11px !important; } }
 /**
@@ -1571,7 +1673,7 @@ html {
   .portable-pv\+ {
     padding-top: 42px !important;
     padding-bottom: 42px !important; } }
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 64em) and (max-width: 79.9375) {
   .desk-p\+ {
     padding: 42px !important; }
 
@@ -1592,6 +1694,29 @@ html {
     padding-left: 42px !important; }
 
   .desk-pv\+ {
+    padding-top: 42px !important;
+    padding-bottom: 42px !important; } }
+@media screen and (min-width: 80em) {
+  .hd-p\+ {
+    padding: 42px !important; }
+
+  .hd-pt\+ {
+    padding-top: 42px !important; }
+
+  .hd-pr\+ {
+    padding-right: 42px !important; }
+
+  .hd-pb\+ {
+    padding-bottom: 42px !important; }
+
+  .hd-pl\+ {
+    padding-left: 42px !important; }
+
+  .hd-ph\+ {
+    padding-right: 42px !important;
+    padding-left: 42px !important; }
+
+  .hd-pv\+ {
     padding-top: 42px !important;
     padding-bottom: 42px !important; } }
 /*------------------------------------*\
@@ -1700,7 +1825,7 @@ html {
   .portable-mv {
     margin-top: 21px !important;
     margin-bottom: 21px !important; } }
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 64em) and (max-width: 79.9375) {
   .desk-m {
     margin: 21px !important; }
 
@@ -1721,6 +1846,29 @@ html {
     margin-left: 21px !important; }
 
   .desk-mv {
+    margin-top: 21px !important;
+    margin-bottom: 21px !important; } }
+@media screen and (min-width: 80em) {
+  .hd-m {
+    margin: 21px !important; }
+
+  .hd-mt {
+    margin-top: 21px !important; }
+
+  .hd-mr {
+    margin-right: 21px !important; }
+
+  .hd-mb {
+    margin-bottom: 21px !important; }
+
+  .hd-ml {
+    margin-left: 21px !important; }
+
+  .hd-mh {
+    margin-right: 21px !important;
+    margin-left: 21px !important; }
+
+  .hd-mv {
     margin-top: 21px !important;
     margin-bottom: 21px !important; } }
 /**
@@ -1820,7 +1968,7 @@ html {
   .portable-pv {
     padding-top: 21px !important;
     padding-bottom: 21px !important; } }
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 64em) and (max-width: 79.9375) {
   .desk-p {
     padding: 21px !important; }
 
@@ -1841,6 +1989,29 @@ html {
     padding-left: 21px !important; }
 
   .desk-pv {
+    padding-top: 21px !important;
+    padding-bottom: 21px !important; } }
+@media screen and (min-width: 80em) {
+  .hd-p {
+    padding: 21px !important; }
+
+  .hd-pt {
+    padding-top: 21px !important; }
+
+  .hd-pr {
+    padding-right: 21px !important; }
+
+  .hd-pb {
+    padding-bottom: 21px !important; }
+
+  .hd-pl {
+    padding-left: 21px !important; }
+
+  .hd-ph {
+    padding-right: 21px !important;
+    padding-left: 21px !important; }
+
+  .hd-pv {
     padding-top: 21px !important;
     padding-bottom: 21px !important; } }
 /**
@@ -1938,7 +2109,7 @@ html {
   .portable-pv-- {
     padding-top: 5px !important;
     padding-bottom: 5px !important; } }
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 64em) and (max-width: 79.9375) {
   .desk-p-- {
     padding: 5px !important; }
 
@@ -1959,6 +2130,29 @@ html {
     padding-left: 5px !important; }
 
   .desk-pv-- {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important; } }
+@media screen and (min-width: 80em) {
+  .hd-p-- {
+    padding: 5px !important; }
+
+  .hd-pt-- {
+    padding-top: 5px !important; }
+
+  .hd-pr-- {
+    padding-right: 5px !important; }
+
+  .hd-pb-- {
+    padding-bottom: 5px !important; }
+
+  .hd-pl-- {
+    padding-left: 5px !important; }
+
+  .hd-ph-- {
+    padding-right: 5px !important;
+    padding-left: 5px !important; }
+
+  .hd-pv-- {
     padding-top: 5px !important;
     padding-bottom: 5px !important; } }
 /**
@@ -2056,7 +2250,7 @@ html {
   .portable-pv- {
     padding-top: 11px !important;
     padding-bottom: 11px !important; } }
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 64em) and (max-width: 79.9375) {
   .desk-p- {
     padding: 11px !important; }
 
@@ -2077,6 +2271,29 @@ html {
     padding-left: 11px !important; }
 
   .desk-pv- {
+    padding-top: 11px !important;
+    padding-bottom: 11px !important; } }
+@media screen and (min-width: 80em) {
+  .hd-p- {
+    padding: 11px !important; }
+
+  .hd-pt- {
+    padding-top: 11px !important; }
+
+  .hd-pr- {
+    padding-right: 11px !important; }
+
+  .hd-pb- {
+    padding-bottom: 11px !important; }
+
+  .hd-pl- {
+    padding-left: 11px !important; }
+
+  .hd-ph- {
+    padding-right: 11px !important;
+    padding-left: 11px !important; }
+
+  .hd-pv- {
     padding-top: 11px !important;
     padding-bottom: 11px !important; } }
 /**
@@ -2174,7 +2391,7 @@ html {
   .portable-pv\+ {
     padding-top: 42px !important;
     padding-bottom: 42px !important; } }
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 64em) and (max-width: 79.9375) {
   .desk-p\+ {
     padding: 42px !important; }
 
@@ -2195,6 +2412,29 @@ html {
     padding-left: 42px !important; }
 
   .desk-pv\+ {
+    padding-top: 42px !important;
+    padding-bottom: 42px !important; } }
+@media screen and (min-width: 80em) {
+  .hd-p\+ {
+    padding: 42px !important; }
+
+  .hd-pt\+ {
+    padding-top: 42px !important; }
+
+  .hd-pr\+ {
+    padding-right: 42px !important; }
+
+  .hd-pb\+ {
+    padding-bottom: 42px !important; }
+
+  .hd-pl\+ {
+    padding-left: 42px !important; }
+
+  .hd-ph\+ {
+    padding-right: 42px !important;
+    padding-left: 42px !important; }
+
+  .hd-pv\+ {
     padding-top: 42px !important;
     padding-bottom: 42px !important; } }
 /**
@@ -2292,7 +2532,7 @@ html {
   .portable-pv0 {
     padding-top: 0 !important;
     padding-bottom: 0 !important; } }
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 64em) and (max-width: 79.9375) {
   .desk-p0 {
     padding: 0 !important; }
 
@@ -2313,6 +2553,29 @@ html {
     padding-left: 0 !important; }
 
   .desk-pv0 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important; } }
+@media screen and (min-width: 80em) {
+  .hd-p0 {
+    padding: 0 !important; }
+
+  .hd-pt0 {
+    padding-top: 0 !important; }
+
+  .hd-pr0 {
+    padding-right: 0 !important; }
+
+  .hd-pb0 {
+    padding-bottom: 0 !important; }
+
+  .hd-pl0 {
+    padding-left: 0 !important; }
+
+  .hd-ph0 {
+    padding-right: 0 !important;
+    padding-left: 0 !important; }
+
+  .hd-pv0 {
     padding-top: 0 !important;
     padding-bottom: 0 !important; } }
 /*------------------------------------*\
@@ -2472,14 +2735,14 @@ header {
   color: #514947;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 300;
+  font-weight: 400;
   width: 100%;
   float: left; }
 
 .nav-collapse a:active,
 .nav-collapse .active a {
   color: #d69b01;
-  font-weight: 400; }
+  font-weight: 700; }
 
 .nav-collapse ul ul a {
   background: #ca3716;
