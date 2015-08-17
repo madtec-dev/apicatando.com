@@ -37,7 +37,7 @@ gulp.task('uncss', function() {
         // remove unused css classes
         .pipe(uncss({
             html: ['./views/index.html'],
-            ignore: ['.js .nav-collapse', '.nav-collapse.opened', '.nav-toggle', '.android .mask', '.mask', '.js-nav-active .mask', '.fixed', '.nav-toggle:before', '.nav-toggle.active:before', '.disable-pointer-events']
+            ignore: ['.js .nav-collapse', '.nav-collapse.opened', '.nav-toggle', '.android .mask', '.mask', '.js-nav-active .mask', '.fixed', '.nav-toggle:before', '.nav-toggle.active:before','.js .nav-collapse.closed', '.disable-pointer-events']
         }))
         // minify and concat resulted css
         .pipe(gulp.dest('./public/dst'));
@@ -49,7 +49,7 @@ gulp.task('css', function () {
         // remove unused css classes
         .pipe(uncss({
             html: ['./views/index.html'],
-            ignore: ['.js .nav-collapse', '.nav-collapse.opened', '.nav-toggle', '.android .mask', '.mask', '.js-nav-active .mask', '.fixed', '.nav-toggle:before', '.nav-toggle.active:before', '.disable-pointer-events', '.nav-collapse .active a']
+            ignore: ['.js .nav-collapse', '.nav-collapse.opened', '.nav-toggle', '.android .mask', '.mask', '.js-nav-active .mask', '.fixed', '.nav-toggle:before', '.nav-toggle.active:before', '.nav-collapse a:active', '.nav-collapse .active a', '.js .nav-collapse.closed', '.disable-pointer-events']
         }))
         // minify and concat resulted css
         .pipe(minifyCss({compatibility: 'ie8'}))
