@@ -2645,18 +2645,16 @@ img {
     content: 'Hacer pedido'; }
 
 .btn--info {
-  background-color: #514947;
-  border-radius: 50%;
-  width: 2em;
-  height: 2em; }
+  background-color: rgba(0, 0, 0, 0.5);
+  font-weight: 700; }
   .btn--info:hover {
     width: auto;
     height: auto;
-    background-color: #5cb85c; }
+    background-color: rgba(92, 184, 92, 0.7); }
     .btn--info:hover span {
       display: none; }
   .btn--info:hover:after {
-    content: attr(title); }
+    content: 'mas info'; }
 
 .btn--orange {
   background-color: #D69B01; }
@@ -2684,7 +2682,7 @@ img {
   position: relative;
   height: 100%; }
   #colmena img {
-    height: 50%; }
+    height: 70%; }
 
 .colmena__info {
   height: 100%;
@@ -2693,7 +2691,7 @@ img {
 
 .overlay {
   visibility: hidden;
-  position: absolute;
+  position: fixed;
   left: 0px;
   top: 0px;
   width: 100%;
@@ -2704,12 +2702,14 @@ img {
 
 .overlay div {
   position: relative;
-  margin: 20% auto;
+  margin: 10% auto;
   background-color: #FEFEFE;
   width: 80%;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
   padding: 1em;
-  text-align: center; }
+  text-align: left; }
+  .overlay div h3 {
+    text-align: center; }
 
 .close {
   position: absolute;
@@ -2718,21 +2718,23 @@ img {
   padding: 5px 7px; }
 
 .info {
-  width: 2em;
+  width: auto;
   height: 2em;
   color: #FEFEFE;
   border-radius: 50%;
-  position: absolute;
-  left: 30%; }
+  position: absolute; }
 
 .info[data-info='1'] {
-  top: 10%; }
-
-.info[data-info='2'] {
+  left: 40%;
   top: 20%; }
 
+.info[data-info='2'] {
+  left: 75%;
+  top: 40%; }
+
 .info[data-info='3'] {
-  top: 30%; }
+  left: 30%;
+  top: 50%; }
 
 /***** ABOUT *******/
 #quienes-somos {
@@ -2783,13 +2785,16 @@ img {
     width: 50%; }
 
   .info[data-info='1'] {
-    top: 15%; }
+    left: 50%;
+    top: 20%; }
 
   .info[data-info='2'] {
-    top: 30%; }
+    top: 40%;
+    left: 63%; }
 
   .info[data-info='3'] {
-    top: 45%; } }
+    top: 50%;
+    left: 40%; } }
 @media screen and (min-width: 80em) {
   .js .nav-collapse {
     position: relative; }
