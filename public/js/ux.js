@@ -9,7 +9,6 @@ for(var i=0;i<close.length;i++){
 }
 
 function overlay(e) {
-  this.className == "close" ? enableScroll() : disableScroll();
   e.preventDefault();
   var attribute = this.getAttribute("data-info");
   el = document.getElementById("overlay" + attribute);
