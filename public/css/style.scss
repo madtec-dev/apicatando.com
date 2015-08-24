@@ -376,7 +376,6 @@ img {
 }
 .front {
   height: 100%;
-  background: url(/img/front-bg3.jpg) no-repeat top center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -580,7 +579,6 @@ div.details.active {
 #contacto {
   color: $white;
   height: 100%;
-  background: url(/img/contact.jpg) no-repeat top center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -601,7 +599,22 @@ div.details.active {
 
 
 /*** MEDIA QUERIES ***/
+@media screen and (max-width: 45em) {
+  .front {
+    background: url(/img/front--small.jpg) no-repeat top center;
+  }
+  #contacto {
+    background: url(/img/contact--small.jpg) no-repeat top center;
+  }
+}
 @media screen and (min-width: 45em) {
+  .front {
+    background: url(/img/front--medium.jpg) no-repeat top center;
+  }
+  #contacto {
+    background: url(/img/contact--medium.jpg) no-repeat top center;
+  }
+
   html {
     font-size: 110%;
   }
@@ -641,6 +654,12 @@ div.details.active {
 }
 
 @media screen and (min-width: 80em) {
+  #contacto {
+    background: url(/img/contact--large.jpg) no-repeat top center;
+  }
+  .front {
+    background: url(/img/front--large.jpg) no-repeat top center;
+  }
   .js .nav-collapse {
     position: relative;
   }

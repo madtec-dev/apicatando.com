@@ -1,4 +1,3 @@
-
 <div id="home" class="animated fadeIn front text--center pt+">
 <!--<h1>apicatando</h1>-->
   <img src="/img/logo.svg" class="animated bounceInDown pt+" alt="" />
@@ -260,7 +259,12 @@
         <p>Nos hemos embarcado en esta aventura llenos de ilusión y <strong>queremos compartir esta ilusión contigo, acercarte nuestro trabajo y dar a conocer el mundo apícola.</strong> </p>
       </div>
       <div class="layout__item u-9/12 u-5/12-lap-and-up u-3/12-hd mb">
-        <img class="img--rounded" src="img/about2.jpg" alt="Foto apicultores"/>
+       <picture>
+          <source srcset="img/about--xlarge.jpg" media="(min-width: 120em)">
+          <source srcset="img/about--large.jpg" media="(min-width: 64em)">
+          <source srcset="img/about--medium.jpg" media="(max-width: 64em)">
+        <img class="img--rounded" srcset="img/about2.jpg" alt="…">
+      </picture> 
       </div>
       <div class="layout__item u-10/12 u-4/12-hd">
         <h3>filosofia</h3>
