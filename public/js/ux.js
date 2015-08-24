@@ -49,3 +49,13 @@ function enableScroll() {
     window.ontouchmove = null;  
     document.onkeydown = null;  
 }
+
+function showDetails() {
+ details.style.display = (details.style.display == "block") ? "none" : "block";
+ details.style.display == "block" ? btn.innerHTML = '<i class="fa fa-minus"></i> propiedades' : btn.innerHTML = '<i class="fa fa-plus"></i> propiedades';              
+  details.style.display == "block" ? details.className = "details active" : details.className = "details";
+}
+
+var btn = document.getElementById("btn-details");
+var details = document.getElementById("details");
+btn.addEventListener('click', showDetails, false);

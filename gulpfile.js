@@ -49,7 +49,7 @@ gulp.task('css', function () {
         // remove unused css classes
         .pipe(uncss({
             html: ['./views/index.html'],
-            ignore: ['h2:first-letter', '.js .nav-collapse', '.nav-collapse.opened', '.nav-toggle', '.android .mask', '.mask', '.js-nav-active .mask', '.fixed', '.nav-toggle:before', '.nav-toggle.active:before', '.nav-collapse a:active', '.nav-collapse .active a', '.js .nav-collapse.closed', '.disable-pointer-events']
+            ignore: [/details/,'h2:first-letter', '.js .nav-collapse', '.nav-collapse.opened', '.nav-toggle', '.android .mask', '.mask', '.js-nav-active .mask', '.fixed', '.nav-toggle:before', '.nav-toggle.active:before', '.nav-collapse a:active', '.nav-collapse .active a', '.js .nav-collapse.closed', '.disable-pointer-events']
         }))
         // minify and concat resulted css
         .pipe(minifyCss({compatibility: 'ie8'}))

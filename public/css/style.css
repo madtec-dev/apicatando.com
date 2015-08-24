@@ -2807,11 +2807,11 @@ h2 {
     text-transform: uppercase; }
 
 h2.tagline {
-  font-family: "Pacifico", cursive;
-  background-color: rgba(0, 0, 0, 0.2);
+  font-family: "Roboto Slab", serif;
   letter-spacing: 2px;
-  font-style: italic;
-  color: #CCCCCC;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #FEFEFE;
   padding: 1em !important; }
 
 html {
@@ -2856,11 +2856,11 @@ img {
 #como-trabajamos img {
   width: 70%; }
 
-#como-trabajamos, #quienes-somos {
+#como-trabajamos {
   background-color: #333333;
   background-image: url("/img/honeycomb.png");
   color: #FEFEFE; }
-  #como-trabajamos h3, #quienes-somos h3 {
+  #como-trabajamos h3 {
     color: #D69B01;
     font-weight: 400;
     text-transform: uppercase; }
@@ -2898,14 +2898,17 @@ img {
   transition: 0.5s ease; }
 
 .btn--default {
+  height: 5em;
+  width: 8em;
   background-color: #48372F; }
   .btn--default:hover {
-    background-color: #5cb85c; }
+    background-color: #5cb85c;
+    width: 13em; }
     .btn--default:hover span {
       display: none; }
   .btn--default:hover:after {
     font-size: 1.61803em;
-    content: 'Hacer pedido'; }
+    content: 'Comprar'; }
 
 .btn--info {
   background-color: rgba(0, 0, 0, 0.5);
@@ -2925,12 +2928,19 @@ img {
     padding: 20px;
     background-color: #5cb85c; }
 
+.btn--green {
+  text-transform: uppercase;
+  border-radius: 0;
+  background-color: #5cb85c; }
+  .btn--green .fa-plus {
+    color: #FEFEFE; }
+  .btn--green:hover {
+    padding: 20px; }
+
 #productos, #colmena {
   background-image: url("/img/honeycomb.png"); }
   #productos p, #colmena p {
     font-weight: 300; }
-  #productos i, #colmena i {
-    color: #CCCCCC; }
 
 .product__title {
   font-weight: 400;
@@ -2939,6 +2949,23 @@ img {
 .product__type {
   font-style: italic;
   color: #D69B01; }
+
+/* Toggled State */
+div.details.active {
+  padding: 10px;
+  font-weight: 300;
+  color: #FEFEFE;
+  background-color: #4A994A;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s; }
+
+.details {
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+  transition: visibility 0s linear 0.5s,opacity 0.5s linear; }
 
 /***** COLMENA *******/
 #colmena {
@@ -3003,11 +3030,18 @@ img {
 
 /***** ABOUT *******/
 #quienes-somos {
-  min-height: 100%; }
+  min-height: 100%;
+  background-color: #FEFEFE;
+  background-image: url("/img/honeycomb.png");
+  color: #514947; }
+  #quienes-somos h3 {
+    color: #D69B01;
+    font-weight: 400;
+    text-transform: uppercase; }
 
 .img--rounded {
   border-radius: 50%;
-  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5); }
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); }
 
 /****** CONTACT ******/
 #contacto {
