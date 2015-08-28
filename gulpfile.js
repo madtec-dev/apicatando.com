@@ -75,7 +75,7 @@ gulp.task('minify-css', function() {
 });
 
 gulp.task('js', function() {
-  return gulp.src(['./public/js/responsive-nav.js', './public/js/scroll.js', './public/js/fixed-responsive-nav.js', './public/js/ux.js'])
+  return gulp.src(['./public/js/analytics.js', './public/js/responsive-nav.js', './public/js/scroll.js', './public/js/fixed-responsive-nav.js', './public/js/ux.js'])
     .pipe(jshint())
     .pipe(jshint.reporter('default'))
     .pipe(uglify())

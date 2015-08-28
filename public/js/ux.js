@@ -59,3 +59,5 @@ function showDetails() {
 var btn = document.getElementById("btn-details");
 var details = document.getElementById("details");
 btn.addEventListener('click', showDetails, false);
+
+
