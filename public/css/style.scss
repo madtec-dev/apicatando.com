@@ -692,4 +692,15 @@ div.details.active {
   }
 
 }
-
+@media(-webkit-min-device-pixel-ratio: 1.5), 
+(min-resolution: 144dpi) {
+  #contacto {
+    background: url(/img/contact--large.jpg) no-repeat top center;
+  }
+  .front {
+    background: url(/img/front--large.jpg) no-repeat top center;
+  }
+}
+#contacto, .front {
+  background-size: cover;
+}
