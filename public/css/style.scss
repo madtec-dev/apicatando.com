@@ -24,6 +24,9 @@
   vertical-align: middle;
 
 }
+.middle {
+  vertical-align: middle;
+}
 
 /* TYPOGRAPHY */
 $ms-base: 1em;
@@ -63,7 +66,7 @@ header {
   left: 0;
   top: 0;
   span img {
-    width: 10%;
+    width: 2em;
   }
 }
 /******* NAV *******/
@@ -81,7 +84,6 @@ header {
   text-decoration: none;
   padding: 0 20px;
   color: $gray;
-  float: left;
 }
 .nav-collapse ul {
   margin: 0;
@@ -214,16 +216,17 @@ header {
   -moz-osx-font-smoothing: grayscale;
   text-decoration: none;
   text-indent: -300px;
-  position: relative;
+  position: absolute;
   overflow: hidden;
-  width: 60px;
-  height: 55px;
-  float: right;
+  width: 50px;
+  top: 5px;
+  right: 5px;
+  height: 60px;
 }
 
 .nav-toggle:before {
   color: $gray; /* Edit this to change the icon color */
-  font: normal 28px/55px "responsivenav"; /* Edit font-size (28px) to change the icon size */
+  font: normal 38px/55px "responsivenav"; /* Edit font-size (28px) to change the icon size */
   text-transform: none;
   text-align: center;
   position: absolute;
@@ -236,13 +239,13 @@ header {
 }
 
 .nav-toggle.active:before {
-  font-size: 24px;
+  font-size: 38px;
   content: "\78"; /* Close icon */
 }
 .layout {
   font-size: 0;
   * {
-  
+
   }
 }
 .layout__item {
@@ -372,7 +375,7 @@ img {
   bottom: 0;
   width: 100%;
   z-index: 0;
-  
+
 }
 .front {
   height: 100%;
@@ -414,7 +417,7 @@ img {
   &:hover:after {
     font-size: ms(1);
     content: 'Comprar';
-  } 
+  }
 }
 .btn--info {
   background-color: rgba(0, 0, 0, .5);
@@ -429,7 +432,7 @@ img {
   }
   &:hover:after {
     content: 'mas info';
-  } 
+  }
 }
 
 .btn--orange {
@@ -530,7 +533,7 @@ div.details.active {
 .close {
   position: absolute;
   top: 0;
-  right: 0; 
+  right: 0;
   padding: 5px 7px;
 }
 .info {
@@ -662,6 +665,7 @@ div.details.active {
   }
   .js .nav-collapse {
     position: relative;
+    display: inline-block ;
   }
   .js .nav-collapse.closed {
     max-height: none;
@@ -674,8 +678,11 @@ div.details.active {
     opacity: 0 !important;
   }
  .nav-collapse {
-    float: right;
     width: auto;
+    float: none;
+  }
+ .nav-collapse ul{
+    float: none;
   }
  .nav-collapse li {
     width: auto;
@@ -692,7 +699,7 @@ div.details.active {
   }
 
 }
-@media(-webkit-min-device-pixel-ratio: 1.5), 
+@media(-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
   #contacto {
     background: url(/img/contact--large.jpg) no-repeat top center;

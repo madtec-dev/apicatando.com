@@ -2611,6 +2611,9 @@ html {
   display: table-cell;
   vertical-align: middle; }
 
+.middle {
+  vertical-align: middle; }
+
 /* TYPOGRAPHY */
 /* COLOR SCHEME */
 .bg--light-gray {
@@ -2629,7 +2632,7 @@ header {
   left: 0;
   top: 0; }
   header span img {
-    width: 10%; }
+    width: 2em; }
 
 /******* NAV *******/
 .logo {
@@ -2637,8 +2640,7 @@ header {
   font-family: "Pacifico", cursive;
   text-decoration: none;
   padding: 0 20px;
-  color: #514947;
-  float: left; }
+  color: #514947; }
   .logo h1 {
     font-size: 1.61803em;
     font-weight: 400;
@@ -2753,16 +2755,17 @@ header {
   -moz-osx-font-smoothing: grayscale;
   text-decoration: none;
   text-indent: -300px;
-  position: relative;
+  position: absolute;
   overflow: hidden;
-  width: 60px;
-  height: 55px;
-  float: right; }
+  width: 50px;
+  top: 5px;
+  right: 5px;
+  height: 60px; }
 
 .nav-toggle:before {
   color: #514947;
   /* Edit this to change the icon color */
-  font: normal 28px/55px "responsivenav";
+  font: normal 38px/55px "responsivenav";
   /* Edit font-size (28px) to change the icon size */
   text-transform: none;
   text-align: center;
@@ -2776,7 +2779,7 @@ header {
   top: 0; }
 
 .nav-toggle.active:before {
-  font-size: 24px;
+  font-size: 38px;
   content: "\78";
   /* Close icon */ }
 
@@ -3112,7 +3115,8 @@ div.details.active {
     background: url(/img/front--large.jpg) no-repeat top center; }
 
   .js .nav-collapse {
-    position: relative; }
+    position: relative;
+    display: inline-block; }
 
   .js .nav-collapse.closed {
     max-height: none; }
@@ -3125,8 +3129,11 @@ div.details.active {
     opacity: 0 !important; }
 
   .nav-collapse {
-    float: right;
-    width: auto; }
+    width: auto;
+    float: none; }
+
+  .nav-collapse ul {
+    float: none; }
 
   .nav-collapse li {
     width: auto; }
