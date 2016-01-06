@@ -49,7 +49,7 @@ gulp.task('css', function () {
         // remove unused css classes
         .pipe(uncss({
             html: ['./views/index.html'],
-            ignore: [/details/,'h2:first-letter', '.js .nav-collapse', '.nav-collapse.opened', '.nav-toggle', '.android .mask', '.mask', '.js-nav-active .mask', '.fixed', '.nav-toggle:before', '.nav-toggle.active:before', '.nav-collapse a:active', '.nav-collapse .active a', '.js .nav-collapse.closed', '.disable-pointer-events']
+            ignore: [/details/,/owl-theme/,'h2:first-letter', '.js .nav-collapse', '.nav-collapse.opened', '.nav-toggle', '.android .mask', '.mask', '.js-nav-active .mask', '.fixed', '.nav-toggle:before', '.nav-toggle.active:before', '.nav-collapse a:active', '.nav-collapse .active a', '.js .nav-collapse.closed', '.disable-pointer-events']
         }))
         // minify and concat resulted css
         .pipe(minifyCss({compatibility: 'ie8'}))
@@ -75,7 +75,15 @@ gulp.task('minify-css', function() {
 });
 
 gulp.task('js', function() {
-  return gulp.src(['./public/js/analytics.js', './public/js/responsive-nav.js', './public/js/scroll.js', './public/js/fixed-responsive-nav.js', './public/js/ux.js'])
+  return gulp.src([
+    './public/js/jquery-1.9.1.min.js',
+    './public/js/owl.carousel.min.js',
+    './public/js/analytics.js',
+    './public/js/responsive-nav.js',
+    './public/js/scroll.js',
+    './public/js/fixed-responsive-nav.js',
+    './public/js/ux.js'
+  ])
     .pipe(jshint())
     .pipe(jshint.reporter('default'))
     .pipe(uglify())

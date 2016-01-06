@@ -3041,6 +3041,14 @@ div.details.active {
     font-weight: 400;
     text-transform: uppercase; }
 
+.owl-theme .owl-controls .owl-page span,
+.owl-theme .owl-controls .owl-buttons div {
+  background-color: #D69B01;
+  font-size: 1rem; }
+
+.owl-theme .owl-controls .owl-buttons div {
+  border-radius: 2px; }
+
 .img--rounded {
   border-radius: 50%;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); }

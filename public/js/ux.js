@@ -22,7 +22,7 @@ function preventDefault(e) {
   e = e || window.event;
   if (e.preventDefault)
       e.preventDefault();
-  e.returnValue = false;  
+  e.returnValue = false;
 }
 
 function preventDefaultForScrollKeys(e) {
@@ -44,15 +44,15 @@ function disableScroll() {
 function enableScroll() {
     if (window.removeEventListener)
         window.removeEventListener('DOMMouseScroll', preventDefault, false);
-    window.onmousewheel = document.onmousewheel = null; 
-    window.onwheel = null; 
-    window.ontouchmove = null;  
-    document.onkeydown = null;  
+    window.onmousewheel = document.onmousewheel = null;
+    window.onwheel = null;
+    window.ontouchmove = null;
+    document.onkeydown = null;
 }
 
 function showDetails() {
  details.style.display = (details.style.display == "block") ? "none" : "block";
- details.style.display == "block" ? btn.innerHTML = '<i class="fa fa-minus"></i> propiedades' : btn.innerHTML = '<i class="fa fa-plus"></i> propiedades';              
+ details.style.display == "block" ? btn.innerHTML = '<i class="fa fa-minus"></i> propiedades' : btn.innerHTML = '<i class="fa fa-plus"></i> propiedades';
   details.style.display == "block" ? details.className = "details active" : details.className = "details";
 }
 
@@ -60,4 +60,21 @@ var btn = document.getElementById("btn-details");
 var details = document.getElementById("details");
 btn.addEventListener('click', showDetails, false);
 
+//Galery
+$(function() {
+    $("#owl-demo").owlCarousel({
+      navigation : true, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem: true,
+      autoHeight : true,
+      navigationText: ['Anterior', 'Siguiente']
 
+      // "singleItem:true" is a shortcut for:
+      // items : 1,
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+  });
+});
